@@ -11,7 +11,8 @@
             "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
-                "enablePullDownRefresh": false
+                "enablePullDownRefresh": false,
+				"backgroundColor": "#ffffff"
             }
             
         }
