@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<search @click="gotosearch"></search>
 		<view style="display:flex;">
 		<!-- 左侧 -->
 		<scroll-view scroll-y="true" class="Bleftscroll" :style="{height: wh + 'px'}">
@@ -52,13 +53,19 @@
 				uni.navigateTo({
 					url:'/subpkg/goods_list/goods_list?cid=' + item.cat_id
 				})
+			},
+			gotosearch(){
+				uni.navigateTo({
+					url:'/subpkg/search/search'
+				})
 			}
 		},
 		onLoad() {
 			this.getcatelist()
 			const sysInfo = uni.getSystemInfoSync()
-			this.wh = sysInfo.windowHeight
+			this.wh = sysInfo.windowHeight - 50  // 获取页面除去tarbar和顶部的区域剩下的值
 		}
+			
 	}
 </script>
 

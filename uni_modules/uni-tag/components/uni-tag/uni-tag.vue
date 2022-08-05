@@ -111,7 +111,7 @@
 	$uni-success: #18bc37 !default;
 	$uni-warning: #f3a73f !default;
 	$uni-error: #e43d33 !default;
-	$uni-info: #8f939c !default;
+	$uni-info: #ffffff !default;
 
 
 	$tag-default-pd: 4px 7px;
@@ -119,12 +119,12 @@
 	$tag-mini-pd: 1px 3px;
 
 	.uni-tag {
+		margin-left: 7px;
 		line-height: 14px;
 		font-size: 12px;
-		font-weight: 200;
+		font-weight: 500;
 		padding: $tag-default-pd;
-		color: #fff;
-		border-radius: 3px;
+		color: #ffffff;
 		background-color: $uni-info;
 		border-width: 1rpx;
 		border-style: solid;
@@ -226,8 +226,9 @@
 
 
 	.uni-tag-text {
-		color: #fff;
+		color: #ffffff;
 		font-size: 14px;
+		font-weight: 700;
 
 		&--primary {
 			color: $uni-primary;

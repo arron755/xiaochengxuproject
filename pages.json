@@ -95,6 +95,17 @@
                 }
                 
                 }
+                ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "购物",
+					"navigationBarTextStyle": "white",
+					"navigationBarBackgroundColor": "#C00000",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
             ]
 		}
 	]
