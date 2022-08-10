@@ -47,6 +47,8 @@
 </template>
 
 <script>
+	import badgeMix from '../../mixin/tabbar-badge.js'
+
 	export default {
 		data() {
 			return {
@@ -55,6 +57,7 @@
 				floorList:[]
 			};
 		},
+		mixins:[badgeMix],
 		onLoad() {
 			this.getswiperList()
 			this.getnavList()

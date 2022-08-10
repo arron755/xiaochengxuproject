@@ -27,6 +27,7 @@
 </template>
 
 <script>
+	import badgeMix from '../../mixin/tabbar-badge.js'
 	export default {
 		data() {
 			return {
@@ -36,6 +37,7 @@
 				wh:0
 			};
 		},
+		mixins: [badgeMix],
 		methods:{
 			async getcatelist(){
 				const {data: res} = await uni.$http.get('/api/public/v1/categories')
